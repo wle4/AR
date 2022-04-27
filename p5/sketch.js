@@ -41,16 +41,16 @@ function setup() {
 
 
 function draw() {
-  // erase the background
+
  
-  //world.clearDrawingCanvas();
+  //world.clearDrawingCanvas(); //<-- UNCOMMENT THIS LINE TO CLEAR CANVAS BETWEEN FRAMES
   // use the markers as positional controllers
   if (markerHiro.isVisible() == true) {
     // get the position of this marker
     var hPos = markerHiro.getScreenPosition();
-    for(var i = 0; i < 10; i++){
-      line(hPos.x + random (50), hPos.y + random(50), hPos.x + random (50), hPos.y + random(50));
-    }
+    //draw black ellipse on marker
+    fill(0);
+    ellipse(hPos.x, hPos.y, 50);
   
   }
 
