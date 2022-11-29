@@ -33,10 +33,6 @@ function setup() {
   // grab a reference to our two markers that we set up on the HTML side (connect to it using its 'id')
   markerHiro = world.getMarker('hiro');
 
-  // place the player in the middle of the screen
-  playerX = width/2;
-  playerY = height/2;
-
 }
 
 
