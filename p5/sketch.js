@@ -45,8 +45,12 @@ function draw() {
     // get the position of this marker
     var hPos = markerHiro.getScreenPosition();
     //draw black ellipse on marker
-    fill(0);
-    ellipse(hPos.x, hPos.y, 50);
+    r = random(500)
+    g = random(500)
+    b = random (500)
+    fill(r,g,b)
+    //ellipse(hPos.x, hPos.y, 50);
+    rect(hPos.x, hPos.y, 50, 50);
   
   }
 
